@@ -438,7 +438,7 @@ body.mobile section.container {
     height: 600px;
     position: relative;
     display: block;
-    overflow: unset;
+    overflow: hidden !important;
 }
 
 body.mobile section.container:after {
@@ -615,6 +615,14 @@ body.mobile section.container .table-data {
     position: relative;
     overflow-x: unset;
     margin-top: -30px;
+}
+
+body.mobile .table-data.custom-table {
+    margin-top: 65%;
+}
+
+body.mobile .table-data.manager-screen {
+    display: none;
 }
 
 .table-data.custom-table .dataTables_wrapper {
@@ -796,6 +804,57 @@ section.container .text-area .edit {
 
 section.container .text-area .save {
     float: right;
+}
+
+section.container .right-area {
+    width: 50%;
+    padding: 0 2%;
+    margin-top: 100px;
+}
+
+section.container .right-area .boxes {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-top: 33px;
+}
+
+section.container .right-area .box {
+    border-radius: 20px;
+    background: white;
+    padding: 25px;
+    width: 47%;
+    box-sizing: border-box;
+    display: flex;
+}
+
+section.container .right-area .box .box-icon img {
+    width: 100%;
+}
+
+section.container .right-area .box .text {
+    margin-left: 10%;
+    width: 50%;
+    margin-top: -10px
+}
+
+section.container .right-area .box .text .key {
+    font-family: 'yummobold';
+    font-size: 1.1em;
+}
+
+section.container .right-area .box .text .value {
+    font-family: 'yummolight';
+    font-size: 2em;
+}
+
+section.container .right-area .box.dhcp,
+section.container .right-area .box.success {
+    margin-top: 6%;
+}
+
+section.container .right-area .box:nth-child(2n) {
+    margin-left: 6%;
 }
 
 .custom-select {
