@@ -40,7 +40,7 @@
     position: relative;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    padding-left: 45px;
+    padding-left: 35px;
     clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 10% 50%, 0% 0%);
     -webkit-clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 10% 50%, 0% 0%);
 }
@@ -77,14 +77,14 @@
 }
 
 .calendar-container .calendar-row.dateinputs .calendar-col.to-date {
-    padding-left: 45px;
+    padding-left: 35px;
     position: relative;
 }
 
 .calendar-container .calendar-row.dateinputs .calendar-col.to-date:after {
     content: '';
     position: absolute;
-    right: 20px;
+    right: 10px;
     top: 15%;
     height: 70%;
     width: 50px;

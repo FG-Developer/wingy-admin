@@ -34,6 +34,10 @@ body.mobile {
     color: rgba(16, 15, 13, .3);
 }
 
+[type="search"] {
+    -webkit-appearance: textfield;
+}
+
 ::placeholder {
     color: rgba(16, 15, 13, .3);
 }
@@ -512,12 +516,7 @@ table.dataTable thead .sorting {
 
 .table-data {
     overflow-x: scroll;
-    padding: 5% 5% 0 2%;
-}
-
-body.mobile section.container .table-data {
-    padding-top: 35%;
-    margin-left: 4%;
+    padding: 5% 2% 0 2%;
 }
 
 .table-data table {
@@ -617,8 +616,17 @@ body.mobile section.container .table-data {
     margin-top: -30px;
 }
 
+.table-data.custom-table.manager-screen {
+    margin-top: 0 !important;
+}
+
 body.mobile .table-data.custom-table {
-    margin-top: 65%;
+    margin-top: 50% !important;
+}
+
+body.mobile .table-data {
+    margin-top: 20% !important;
+    margin-left: 4% !important;
 }
 
 body.mobile .table-data.manager-screen {
@@ -632,6 +640,7 @@ body.mobile .table-data.manager-screen {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    z-index: -1;
 }
 
 .table-data.custom-table .dataTables_wrapper .dataTables_length {
@@ -681,10 +690,11 @@ body.mobile .table-data.manager-screen {
     border-radius: 10px;
     border: none;
     width: 250px;
+    height: 40px;
     padding: 10px 35px 10px 10px;
     box-sizing: border-box;
     background: url('../img/search-icon.png') no-repeat rgba(112, 112, 112, 0.1);
-    background-position: 95% 5px;
+    background-position: 95% 8px;
     background-size: 25px;
 }
 
@@ -725,9 +735,7 @@ body.mobile .table-data.manager-screen {
 }
 
 .table-data.custom-table .table-right-corner {
-    position: absolute;
-    right: 5%;
-    width: 200px;
+    width: 250px;
     height: 50px;
     background: rgb(254, 226, 2);
     border-top-left-radius: 20px;
@@ -735,21 +743,25 @@ body.mobile .table-data.manager-screen {
     border-top: 10px solid white;
     border-left: 10px solid white;
     border-right: 10px solid white;
-    bottom: 505px;
-    z-index: 1;
+    z-index: 2;
     text-align: right;
+    padding: 0 20px;
+    margin-bottom: -10px;
+    float: right;
 }
 
 .table-data.custom-table .table-right-corner span {
-    padding: 10px 5px 10px 0;
     display: inline-block;
     margin-top: 17px;
     font-size: 1rem;
 }
 
+.table-data.custom-table .table-right-corner span.info-text {
+    float: left;
+}
+
 .table-data.custom-table .table-right-corner strong {
     font-size: 1.5rem;
-    margin-right: 15px;
     margin-top: 17px;
 }
 
