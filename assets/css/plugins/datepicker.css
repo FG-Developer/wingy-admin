@@ -1,5 +1,4 @@
 .calendar-container {
-    margin-top: 10px;
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -40,7 +39,7 @@
     position: relative;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    padding-left: 35px;
+    padding-left: 8%;
     clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 10% 50%, 0% 0%);
     -webkit-clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 10% 50%, 0% 0%);
 }
@@ -77,7 +76,7 @@
 }
 
 .calendar-container .calendar-row.dateinputs .calendar-col.to-date {
-    padding-left: 35px;
+    padding-left: 8%;
     position: relative;
 }
 
@@ -379,7 +378,7 @@ html .ui-timepicker-div .ui-button.ui-state-disabled:active {
         padding: 10px !important;
     }
     .calendar-container .calendar-row .calendar-col.to {
-        padding-left: 15px !important;
+        padding-left: 7% !important;
         clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 15% 50%, 0% 0%);
         -webkit-clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 5% 50%, 0% 0%);
     }
@@ -387,7 +386,7 @@ html .ui-timepicker-div .ui-button.ui-state-disabled:active {
         padding: 0 10px !important;
     }
     .calendar-container .calendar-row.dateinputs .calendar-col.to-date {
-        padding-left: 15px !important;
+        padding-left: 7% !important;
     }
 }
 

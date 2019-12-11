@@ -161,6 +161,9 @@
         z-index: 1 !important;
         padding-top: 50px;
     }
+    .table-data.custom-table .dataTables_wrapper:before {
+        content: none !important;
+    }
     .table-data.custom-table .dataTables_wrapper .dataTables_paginate {
         position: unset !important;
         float: none !important;
@@ -262,6 +265,8 @@
     nav .menu {
         top: 20px !important;
         width: 200px !important;
+        height: 260px;
+        overflow-y: scroll;
     }
     nav .brand-logo-area {
         width: 90px !important;

@@ -640,7 +640,17 @@ body.mobile .table-data.manager-screen {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    z-index: -1;
+}
+
+.table-data.custom-table .dataTables_wrapper:before {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: -10px;
+    width: 290px;
+    height: 10px;
+    background: #fee202;
+    z-index: 1;
 }
 
 .table-data.custom-table .dataTables_wrapper .dataTables_length {
@@ -832,7 +842,7 @@ section.container .right-area .boxes {
 }
 
 section.container .right-area .box {
-    border-radius: 20px;
+    border-radius: 10px;
     background: white;
     padding: 25px;
     width: 47%;
